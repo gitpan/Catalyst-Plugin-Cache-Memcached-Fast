@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Catalyst-Plugin-Cache-Memcached-Fast.t
+lib/Catalyst/Plugin/Cache/Memcached/Fast.pm

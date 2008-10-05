@@ -65,7 +65,7 @@ Extends base class with a distributed cache.
 
 =item cache
 
-Returns an instance of C<Cache::Memcached::Fats>
+Returns an instance of C<Cache::Memcached::Fast>
 
 =back
 

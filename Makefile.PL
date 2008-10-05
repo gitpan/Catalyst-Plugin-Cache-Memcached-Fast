@@ -7,7 +7,8 @@ WriteMakefile(
     VERSION_FROM	=> 'lib/Catalyst/Plugin/Cache/Memcached/Fast.pm',
 	ABSTRACT_FROM	=> 'lib/Catalyst/Plugin/Cache/Memcached/Fast.pm',
     PREREQ_PM		=> {
-		Catalyst => '5.70',
+		'Cache::Memcached::Fast'	=> '0.12',
+		'Catalyst'					=> '5.70',
 	},
 	AUTHOR			=> 'Vasiliy Voloshin <vasilus@cpan.org',
 );

@@ -19,6 +19,10 @@ sub setup {
 		$params = { %{ $self->config->{cache} } };
 	}
 
+	if( ref $params->{servers} ne 'ARRAY' ){
+		$params->{servers} = [$params->{servers}];
+	}
+
 	$self->cache( Cache::Memcached::Fast->new($params) );
 
 	return $self->NEXT::setup(@_);

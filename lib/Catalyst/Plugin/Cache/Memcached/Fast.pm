@@ -4,11 +4,18 @@ use strict;
 use warnings;
 use base 'Class::Data::Inheritable';
 
-our $VERSION='0.13';
+our $VERSION='0.14';
 
 use Cache::Memcached::Fast;
 
 __PACKAGE__->mk_classdata('cache');
+
+=head2 EXTENDED METHODS
+
+=head3 setup
+
+=cut
+
 
 sub setup {
 	my $self = shift;

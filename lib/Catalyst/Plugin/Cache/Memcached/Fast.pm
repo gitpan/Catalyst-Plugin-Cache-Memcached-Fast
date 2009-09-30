@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base 'Class::Data::Inheritable';
 
-our $VERSION='0.1';
+our $VERSION='0.13';
 
 use Cache::Memcached::Fast;
 
@@ -25,7 +25,7 @@ sub setup {
 
 	$self->cache( Cache::Memcached::Fast->new($params) );
 
-	return $self->NEXT::setup(@_);
+	return $self->next::method(@_);
 }
 
 1;
